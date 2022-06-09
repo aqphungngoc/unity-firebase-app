@@ -1,0 +1,13 @@
+Assets/Firebase/Editor/DynamicLinksDependencies.xml
+Assets/Firebase/Plugins/Firebase.DynamicLinks.dll
+Assets/Firebase/Plugins/Firebase.DynamicLinks.pdb
+Assets/Firebase/Plugins/iOS/Firebase.DynamicLinks.dll
+Assets/Firebase/Plugins/iOS/Firebase.DynamicLinks.pdb
+Assets/Firebase/Plugins/x86_64/FirebaseCppDynamicLinks.bundle
+Assets/Firebase/Plugins/x86_64/FirebaseCppDynamicLinks.dll
+Assets/Firebase/Plugins/x86_64/FirebaseCppDynamicLinks.so
+Assets/Firebase/m2repository/com/google/firebase/firebase-dynamic-links-unity/9.0.0/firebase-dynamic-links-unity-9.0.0.pom
+Assets/Firebase/m2repository/com/google/firebase/firebase-dynamic-links-unity/9.0.0/firebase-dynamic-links-unity-9.0.0.srcaar
+Assets/Firebase/m2repository/com/google/firebase/firebase-dynamic-links-unity/maven-metadata.xml
+Assets/Plugins/iOS/Firebase/libFirebaseCppDynamicLinks.a
+Assets/package.json
