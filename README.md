@@ -32,10 +32,10 @@ Add this line to UPM Window for installing invidual Plugins
 
 ## Or simply add these line to file Packages/Manifest.json
 
-    "com.google.external-dependency-manager": "https://github.com/aqphungngoc/unity-firebase-app.git?path=ExternalDependencyManager#1.40",
-    "com.google.firebase.app": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseApp#1.40",
-    "com.google.firebase.analytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseAnalytics#1.40",
-    "com.google.firebase.crashlytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseCrashlytics#1.40",
-    "com.google.firebase.dynamic-links": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseDynamicLink#1.40",
-    "com.google.firebase.messaging": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseMessaging#1.40",
-    "com.google.firebase.remote-config": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseRemoteConfig#1.40"
+    "com.google.external-dependency-manager": "https://github.com/aqphungngoc/unity-firebase-app.git?path=ExternalDependencyManager#1.41",
+    "com.google.firebase.app": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseApp#1.41",
+    "com.google.firebase.analytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseAnalytics#1.41",
+    "com.google.firebase.crashlytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseCrashlytics#1.41",
+    "com.google.firebase.dynamic-links": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseDynamicLink#1.41",
+    "com.google.firebase.messaging": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseMessaging#1.41",
+    "com.google.firebase.remote-config": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseRemoteConfig#1.41"
