@@ -2,11 +2,14 @@ Firebase Unity SDK
 ==================
 
 The Firebase Unity SDK provides Unity packages for the following Firebase
-features on *iOS* and *Android*:
+features on *iOS*, *tvOS* and *Android*.
+
+Note: Firebase Dynamic Links is not supported on tvOS.
 
 | Feature                            | Unity Package                     |
 |:----------------------------------:|:---------------------------------:|
 | Firebase Analytics                 | FirebaseAnalytics.unitypackage    |
+| Firebase App Check                 | FirebaseAppCheck.unitypackage     |
 | Firebase Authentication            | FirebaseAuth.unitypackage         |
 | Firebase Crashlytics               | FirebaseCrashlytics.unitypackage  |
 | Firebase Dynamic Links             | FirebaseDynamicLinks.unitypackage |
@@ -29,6 +32,7 @@ desktop builds on Windows, OS X, and Linux:
 | Feature                            | Unity Package                     |
 |:----------------------------------:|:---------------------------------:|
 | Firebase Authentication            | FirebaseAuth.unitypackage         |
+| Firebase App Check                 | FirebaseAppCheck.unitypackage     |
 | Firebase Realtime Database*        | FirebaseDatabase.unitypackage     |
 | Cloud Firestore                    | FirebaseFirestore.unitypackage    |
 | Firebase Functions                 | FirebaseFunctions.unitypackage    |
@@ -67,6 +71,58 @@ Support
 
 Release Notes
 -------------
+### 11.0.0
+- Changes
+    - App Check: Adds support for Firebase App Check on Android, iOS, tvOS,
+      and desktop platforms. To learn more, see
+      https://firebase.google.com/docs/app-check
+    - Messaging: Remove deprecated calls `Send`, `Subscribe`, and `Unsubscribe`.
+    - Remote Config (Android/iOS): Added support for real-time config updates. Use the new
+      `OnConfigUpdateListener` API to get real-time updates. Existing
+      `FetchAsync` and `ActivateAsync` APIs aren't affected by this change.
+      To learn more, see
+      [Get started with Firebase Remote Config](https://firebase.google.com/docs/remote-config/get-started?platform=unity#add-real-time-listener).
+    - Auth: Deprecated a number of methods, appending `_DEPRECATED` to some of
+      their names. This is a breaking change; you must either modify your code
+      to refer to the `_DEPRECATED` methods, or switch to the new methods, which
+      have new return types `AuthResult` (rather than `SignInResult`). The
+      deprecated methods will be removed in the *next* major release of the
+      Firebase Unity SDK. *(Note: do not mix and match using the old
+      and new methods or undefined behavior may result.)*
+
+### 10.7.0
+- Changes
+    - General: Update to Firebase C++ SDK version 10.7.0.
+    - General (Android): Update Firebase Android BoM dependencies to v31.3.0.
+    - General (iOS): Update Firebase Cocoapods dependencies to v10.7.0.
+    - Messaging (Android): Generate the custom MessagingUnityPlayerActivity
+      as a Java file instead of precompiling it. This is to better support
+      changes with the UnityPlayerActivity, and GameActivity options, in
+      the Unity 2023 editor.
+    - Firestore: Added `Query.Count()`, which fetches the number of documents in
+      the result set without actually downloading the documents
+      ([#659](https://github.com/firebase/firebase-unity-sdk/pull/659)).
+
+### 10.6.0
+- Changes
+    - General (Android): Update to Firebase Android BoM version 31.2.3.
+    - General (iOS): Update to Firebase Cocoapods version 10.6.0.
+
+### 10.5.0
+- Changes
+    - General (Android): Update to Firebase Android BoM version 31.2.1.
+    - General (iOS): Update to Firebase Cocoapods version 10.5.0.
+
+### 10.4.0
+- Changes
+    - General (Android): Update to Firebase Android BoM version 31.2.0.
+    - General (iOS): Update to Firebase Cocoapods version 10.4.0.
+    - Firebase introduces Unity SDK support for tvOS, for Analytics,
+      Authentication, Crashlytics, Database, Firestore, Cloud Functions,
+      Installations, Messaging, Remote Config and Storage.
+    - Analytics: Added `SetConsent()` and `GetSessionIdAsync()` APIs.
+    - Crashlytics: Added `ReportUncaughtExceptionsAsFatal` property and `LogExceptionAsFatal` API.
+
 ### 10.3.0
 - Changes
     - General (Android): Update to Firebase Android BoM version 31.1.1.
@@ -99,7 +155,7 @@ Release Notes
 
 ### 10.0.1
 - Changes
-    - Crashlytics (Android): Fixed a critical [issue](https://github.com/firebase/firebase-android-sdk/issues/4223) 
+    - Crashlytics (Android): Fixed a critical [issue](https://github.com/firebase/firebase-android-sdk/issues/4223)
       that was causing background crashes in specific cases.
 
 ### 10.0.0
@@ -108,7 +164,7 @@ Release Notes
     - General (Android): Update Firebase Android BoM dependencies to v31.0.0.
     - General (iOS): Update Firebase Cocoapods dependencies to v10.0.0.
     - General: Minimum supported editor version is now Unity 2019.
-    - General: Removed dependency on Parse Tasks. 
+    - General: Removed dependency on Parse Tasks.
     - Auth (Android/iOS): Deprecate `PhoneAuthProvider.MaxTimeoutMs`. The actual
       range is determined by the underlying SDK, ex. [PhoneAuthOptions.Builder in Android SDK](https://firebase.google.com/docs/reference/android/com/google/firebase/auth/PhoneAuthOptions.Builder).
     - Remote Config: Improve performance when setting default parameters
