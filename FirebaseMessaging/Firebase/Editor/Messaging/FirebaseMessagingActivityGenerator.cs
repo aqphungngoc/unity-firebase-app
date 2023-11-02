@@ -110,7 +110,7 @@ public class FirebaseMessagingActivityGenerator : IPreprocessBuildWithReport {
 "  @Override",
 "  protected void onCreate(Bundle savedInstanceState) {{",
 "    if (mUnityPlayer != null) {{",
-"      mUnityPlayer.quit();",
+"      mUnityPlayer.{1}();",
 "      mUnityPlayer = null;",
 "    }}",
 "    super.onCreate(savedInstanceState);",
@@ -118,7 +118,15 @@ public class FirebaseMessagingActivityGenerator : IPreprocessBuildWithReport {
 "}}"
   };
   private readonly string BaseActivityClass = "UnityPlayerActivity";
+#if UNITY_2023_1_OR_NEWER
   private readonly string BaseGameActivityClass = "UnityPlayerGameActivity";
+#endif
+
+#if UNITY_2023_1_OR_NEWER
+  private readonly string UnityPlayerQuitFunction = "destroy";
+#else
+  private readonly string UnityPlayerQuitFunction = "quit";
+#endif
 
   private readonly string GeneratedFileTag = "FirebaseMessagingActivityGenerated";
   // If this tag is present on the generated file, it will not be replaced.
@@ -142,7 +150,8 @@ public class FirebaseMessagingActivityGenerator : IPreprocessBuildWithReport {
       baseClass = BaseGameActivityClass;
     }
 #endif
-    string fileContents = System.String.Format(System.String.Join("\n", ActivityClassContents), baseClass);
+    string fileContents = System.String.Format(System.String.Join("\n", ActivityClassContents),
+                                               baseClass, UnityPlayerQuitFunction);
 
     // Check if the file has already been generated.
     string[] oldAssetGuids = AssetDatabase.FindAssets("l:" + GeneratedFileTag);
