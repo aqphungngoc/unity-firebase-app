@@ -18,10 +18,6 @@ Add this line to UPM Window for installing invidual Plugins
 
 	https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseCrashlytics#{release_version}
 
-## FirebaseMessaging
-
-	https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseMessaging#{release_version}
-
 ## FirebaseRemoteConfig
 
 	https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseRemoteConfig#{release_version}
@@ -32,5 +28,4 @@ Add this line to UPM Window for installing invidual Plugins
     "com.google.firebase.app": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseApp#1.9",
     "com.google.firebase.analytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseAnalytics#1.9",
     "com.google.firebase.crashlytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseCrashlytics#1.9",
-    "com.google.firebase.messaging": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseMessaging#1.9",
     "com.google.firebase.remote-config": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseRemoteConfig#1.9"
