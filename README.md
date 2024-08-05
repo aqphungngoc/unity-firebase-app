@@ -28,9 +28,9 @@ Add this line to UPM Window for installing invidual Plugins
 
 ## Or simply add these line to file Packages/Manifest.json
 
-    "com.google.external-dependency-manager": "https://github.com/aqphungngoc/unity-firebase-app.git?path=ExternalDependencyManager#1.6",
-    "com.google.firebase.app": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseApp#1.6",
-    "com.google.firebase.analytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseAnalytics#1.6",
-    "com.google.firebase.crashlytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseCrashlytics#1.6",
-    "com.google.firebase.messaging": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseMessaging#1.6",
-    "com.google.firebase.remote-config": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseRemoteConfig#1.6"
+    "com.google.external-dependency-manager": "https://github.com/aqphungngoc/unity-firebase-app.git?path=ExternalDependencyManager#1.9",
+    "com.google.firebase.app": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseApp#1.9",
+    "com.google.firebase.analytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseAnalytics#1.9",
+    "com.google.firebase.crashlytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseCrashlytics#1.9",
+    "com.google.firebase.messaging": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseMessaging#1.9",
+    "com.google.firebase.remote-config": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseRemoteConfig#1.9"

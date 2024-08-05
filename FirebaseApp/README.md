@@ -6,20 +6,20 @@ features on *iOS*, *tvOS* and *Android*.
 
 Note: Firebase Dynamic Links is not supported on tvOS.
 
-| Feature                            | Unity Package                     |
-|:----------------------------------:|:---------------------------------:|
-| Firebase Analytics                 | FirebaseAnalytics.unitypackage    |
-| Firebase App Check                 | FirebaseAppCheck.unitypackage     |
-| Firebase Authentication            | FirebaseAuth.unitypackage         |
-| Firebase Crashlytics               | FirebaseCrashlytics.unitypackage  |
-| Firebase Dynamic Links             | FirebaseDynamicLinks.unitypackage |
-| Cloud Firestore                    | FirebaseFirestore.unitypackage    |
-| Firebase Functions                 | FirebaseFunctions.unitypackage    |
-| Firebase Installations             | FirebaseInstallations.unitypackage|
-| Firebase Messaging                 | FirebaseMessaging.unitypackage    |
-| Firebase Realtime Database         | FirebaseDatabase.unitypackage     |
-| Firebase Remote Config             | FirebaseRemoteConfig.unitypackage |
-| Firebase Storage                   | FirebaseStorage.unitypackage      |
+| Feature                             | Unity Package                     |
+|:-----------------------------------:|:---------------------------------:|
+| Firebase Analytics                  | FirebaseAnalytics.unitypackage    |
+| Firebase App Check                  | FirebaseAppCheck.unitypackage     |
+| Firebase Authentication             | FirebaseAuth.unitypackage         |
+| Firebase Crashlytics                | FirebaseCrashlytics.unitypackage  |
+| Firebase Dynamic Links (deprecated) | FirebaseDynamicLinks.unitypackage |
+| Cloud Firestore                     | FirebaseFirestore.unitypackage    |
+| Firebase Functions                  | FirebaseFunctions.unitypackage    |
+| Firebase Installations              | FirebaseInstallations.unitypackage|
+| Firebase Messaging                  | FirebaseMessaging.unitypackage    |
+| Firebase Realtime Database          | FirebaseDatabase.unitypackage     |
+| Firebase Remote Config              | FirebaseRemoteConfig.unitypackage |
+| Firebase Storage                    | FirebaseStorage.unitypackage      |
 
 The SDK provides .NET 4.x compatible packages
 
@@ -71,6 +71,75 @@ Support
 
 Release Notes
 -------------
+### 12.1.0
+- Changes
+    - General: Update to Firebase C++ SDK version 12.1.0.
+    - General (Android): Update to Firebase Android BoM version 33.1.1.
+    - General (iOS): Update to Firebase Cocoapods version 10.28.1.
+    - General: Update to EDM4U version 1.2.181.
+    - Analytics (iOS): Add support for
+      `InitiateOnDeviceConversionMeasurementWithHashedEmailAddress` and
+      `InitiateOnDeviceConversionMeasurementWithHashedPhoneNumber`.
+    - Messaging (Android): Fixed a potential race condition on receiving
+      messages after cleanup.
+      ([#1030](https://github.com/firebase/firebase-unity-sdk/issues/1030)).
+    - Messaging (iOS): Fixed an issue with notifications being lost if they
+      were received before Firebase Messaging was initialized.
+      ([#377](https://github.com/firebase/firebase-unity-sdk/issues/377)).
+
+### 12.0.0
+- Changes
+    - General: Update to Firebase C++ SDK version 12.0.0.
+    - General (Android): Update to Firebase Android BoM version 33.0.0.
+    - General (Android): Updated minSdkVersion to 23, and targetSdkVersion
+      and compileSdkVersion to 34.
+    - General (iOS): Update to Firebase Cocoapods version 10.25.0.
+    - General (iOS): Minimum iOS deployment target is now 13.0.
+    - General: Minimum supported editor version is now Unity 2020.
+    - Auth: Remove deprecated calls involving `SignInResult`, most of
+      which were appended with `_DEPRECATED`.
+    - Remote Config: Remove deprecated `ConfigSettings.MinimumFetchInternalInMilliseconds`,
+      use `ConfigSettings.MinimumFetchIntervalInMilliseconds` instead.
+
+### 11.9.0
+- Changes
+    - General: Update to Firebase C++ SDK version 11.10.0.
+    - General (Android): Update to Firebase Android BoM version 32.8.1.
+    - General (iOS): Update to Firebase Cocoapods version 10.24.0.
+    - App Check: Fix potential crash when fetching a token.
+      ([#877](https://github.com/firebase/firebase-unity-sdk/issues/877)).
+    - Storage (Desktop): Removed 5-minute timeout for uploads and downloads.
+      ([#968](https://github.com/firebase/firebase-unity-sdk/issues/968)).
+
+### 11.8.1
+- Changes
+    - Firestore (iOS): Fix undefined absl symbols error.
+      ([#974](https://github.com/firebase/firebase-unity-sdk/issues/974))
+
+### 11.8.0
+- Changes
+    - General: Update to Firebase C++ SDK version 11.9.0.
+    - General (Android): Update to Firebase Android BoM version 32.7.4.
+    - General (iOS): Update to Firebase Cocoapods version 10.22.0.
+    - General (Android): Improve how property tag logic handles Unity 2022+.
+    - Auth: Add FirebaseUser.SendEmailVerificationBeforeUpdatingEmailAsync,
+      a new method to verify and change the User's email.
+    - Auth: Deprecate the older method of updating emails, UpdateEmail.
+    - Dynamic Links: The Dynamic Links SDK is now deprecated. See the [support
+      documentation](https://firebase.google.com/support/dynamic-links-faq)
+      for more information.
+
+### 11.7.0
+- Changes
+    - General: Update to Firebase C++ SDK version 11.8.0.
+    - General (Android): Update to Firebase Android BoM version 32.7.1.
+    - General (iOS): Update to Firebase Cocoapods version 10.20.0.
+    - Analytics: Updated the consent management API to include new consent
+      signals.
+    - Auth: Fix a bug where an anonymous account can't be linked with
+      email password credential. For background, see [Email Enumeration
+      Protection](https://cloud.google.com/identity-platform/docs/admin/email-enumeration-protection)
+
 ### 11.6.0
 - Changes
     - General: Update to Firebase C++ SDK version 11.6.0.
