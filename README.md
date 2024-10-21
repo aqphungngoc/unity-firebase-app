@@ -1,6 +1,6 @@
 # Instal Package via UPM
 
-Add this line to UPM Window for installing invidual Plugins
+Add this line to UPM Window for installing invidual Package
 
 ## ExternalDependencyManager
 
@@ -21,6 +21,18 @@ Add this line to UPM Window for installing invidual Plugins
 ## FirebaseRemoteConfig
 
 	https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseRemoteConfig#{release_version}
+
+## Google.play.common
+
+	https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.common#{release_version}
+	
+## Google.play.core
+
+	https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.core#{release_version}
+	
+## Google.play.review
+
+	https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.review#{release_version}
 
 ## Or simply add these line to file Packages/Manifest.json
 
