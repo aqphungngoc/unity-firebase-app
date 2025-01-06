@@ -36,11 +36,11 @@ Add this line to UPM Window for installing invidual Package
 
 ## Or simply add these line (should follow this order) to file Packages/Manifest.json
 
-    "com.google.external-dependency-manager": "https://github.com/aqphungngoc/unity-firebase-app.git?path=ExternalDependencyManager#1.1.0",
-    "com.google.firebase.app": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseApp#1.1.0",
-    "com.google.firebase.analytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseAnalytics#1.1.0",
-    "com.google.firebase.crashlytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseCrashlytics#1.1.0",
-    "com.google.firebase.remote-config": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseRemoteConfig#1.1.0",
-    "com.google.play.common": "https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.common#1.1.0",
-    "com.google.play.core": "https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.core#1.1.0",
-    "com.google.play.review": "https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.review#1.1.0",
+    "com.google.external-dependency-manager": "https://github.com/aqphungngoc/unity-firebase-app.git?path=ExternalDependencyManager#1.1.1",
+    "com.google.firebase.app": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseApp#1.1.1",
+    "com.google.firebase.analytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseAnalytics#1.1.1",
+    "com.google.firebase.crashlytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseCrashlytics#1.1.1",
+    "com.google.firebase.remote-config": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseRemoteConfig#1.1.1",
+    "com.google.play.common": "https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.common#1.1.1",
+    "com.google.play.core": "https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.core#1.1.1",
+    "com.google.play.review": "https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.review#1.1.1",
